@@ -1,3 +1,12 @@
+var kitty_increase = 0;
+
+	$('#kittySpawner').on('click', function(event){
+		kitty_increase +=1;
+		$('.cats').append("<div id=myClicks" + kitty_increase + ">I'm Working</div>");
+		$('.myClicks' + kitty_increase).append('<img src="cat.png" alt="catPicture" height="320">')
+	});
+
+
 
 $(document).ready(function clickCount(){
 	var a = 0;
@@ -10,6 +19,7 @@ $(document).ready(function clickCount(){
       myCat = document.getElementById('clickMe');
 	       document.getElementById('myClicks1').value = a;
 		   myCat = document.getElementById('clickMe');
+
 	  // ampliador primer gato
 	    $('#clickMe').on('click', function(event){
 	    a = a+1;
